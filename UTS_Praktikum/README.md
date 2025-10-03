@@ -98,3 +98,102 @@ java main.PetManagementSystem
 ```
 
 Program akan berjalan di konsol, dan Anda dapat mulai berinteraksi dengan menu yang ditampilkan.
+
+## Cara Menggunakan Program (Panduan Langkah Demi Langkah)
+
+Setelah program berjalan, Anda akan disambut dengan menu utama. Berikut adalah panduan untuk menggunakan setiap fiturnya.
+
+### 1. Menambah Hewan Peliharaan Baru
+
+Ini adalah langkah pertama yang harus dilakukan jika daftar hewan masih kosong.
+
+1.  Dari menu utama, pilih opsi `1` dan tekan Enter.
+    ```
+    Masukkan pilihan Anda: 1
+    ```
+2.  Pilih jenis hewan yang ingin ditambahkan (misalnya, `1` untuk Anjing).
+    ```
+    Pilih jenis hewan:
+    1. Anjing
+    2. Kucing
+    Pilihan: 1
+    ```
+3.  Masukkan nama hewan, lalu tekan Enter.
+    ```
+    Masukkan nama hewan: Milo
+    ```
+4.  Masukkan umur hewan, lalu tekan Enter.
+    ```
+    Masukkan umur hewan: 3
+    ```
+5.  Anda akan mendapatkan pesan konfirmasi bahwa hewan telah berhasil ditambahkan.
+    ```
+    Milo berhasil ditambahkan ke dalam daftar!
+    ```
+6.  Ulangi langkah ini untuk menambahkan hewan lain, misalnya seekor kucing.
+
+### 2. Menampilkan Daftar Hewan Peliharaan
+
+Gunakan opsi ini untuk melihat semua hewan yang sudah Anda tambahkan.
+
+1.  Dari menu utama, pilih opsi `2` dan tekan Enter.
+2.  Program akan menampilkan daftar semua hewan beserta detailnya (nama, umur, dan energi).
+    ```
+    --- Daftar Hewan Peliharaan ---
+    1. Nama: Milo, Umur: 3, Energi: 100
+    2. Nama: Luna, Umur: 2, Energi: 100
+    ```
+    Jika belum ada hewan, pesan "Belum ada hewan peliharaan yang terdaftar." akan muncul.
+
+### 3. Berinteraksi dengan Hewan Peliharaan
+
+Ini adalah fitur inti dari program.
+
+1.  Dari menu utama, pilih opsi `3` dan tekan Enter.
+2.  Program akan menampilkan daftar hewan yang tersedia. Pilih hewan yang ingin Anda ajak berinteraksi dengan memasukkan nomornya.
+    ```
+    Pilih nomor hewan untuk berinteraksi: 1
+    ```
+3.  Setelah memilih hewan (misalnya Milo), menu interaksi akan muncul.
+    ```
+    Anda memilih: Milo
+    Pilih Aksi:
+    1. Beri Makan
+    2. Ajak Tidur
+    3. Dengar Suara
+    4. Ajak Bermain
+    5. Beri Makan Spesial (Overloading)
+    Pilihan Aksi:
+    ```
+4.  Pilih aksi yang diinginkan:
+    *   **Pilih `1` (Beri Makan):** Energi hewan akan bertambah 20.
+        ```
+        Milo sedang makan...
+        Energi Milo bertambah menjadi 100
+        ```
+    *   **Pilih `2` (Ajak Tidur):** Energi hewan akan pulih sepenuhnya menjadi 100.
+        ```
+        Milo sedang tidur...
+        Energi Milo pulih sepenuhnya!
+        ```
+    *   **Pilih `3` (Dengar Suara):** Hewan akan mengeluarkan suara khasnya.
+        ```
+        Milo bersuara: Guk! Guk!
+        ```
+    *   **Pilih `4` (Ajak Bermain):** Energi hewan akan berkurang. Jika energi habis, hewan tidak bisa bermain.
+        ```
+        Milo sedang bermain lempar tangkap!
+        Energi Milo sekarang: 85
+        ```
+    *   **Pilih `5` (Beri Makan Spesial):** Aksi ini menunjukkan *method overloading*. Anjing akan makan "Tulang" dan kucing akan makan "Tuna", dengan pemulihan energi yang lebih besar daripada makan biasa.
+        ```
+        Milo sedang makan cemilan favoritnya: Tulang
+        Energi Milo bertambah menjadi 100
+        ```
+
+### 4. Keluar
+
+Untuk menghentikan program.
+
+1.  Dari menu utama, pilih opsi `4` dan tekan Enter.
+2.  Program akan menampilkan pesan "Program selesai." dan aplikasi akan tertutup.
