@@ -1,0 +1,25 @@
+package RemoveTest;
+
+import java.util.ArrayList;
+
+public class RemoveTest {
+
+    public static void main(String[] args) {
+        // TODO Auto-generated method stub
+        ArrayList<String> arr = new ArrayList<String>();
+        arr.add("Andrew");
+        arr.add("Bob");
+        arr.add("Cella");
+        arr.add("Denlie");
+        arr.add(null);
+        arr.add("Emely");
+        System.out.println(arr);
+
+        arr.remove("Denlie");
+        System.out.println(arr);
+
+        arr.remove(3);
+        System.out.println(arr);
+
+    }
+}
