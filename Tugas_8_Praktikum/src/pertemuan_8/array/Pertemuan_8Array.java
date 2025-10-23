@@ -120,4 +120,5 @@ public class Pertemuan_8Array {
         input.close();
     }
     
+
 }
